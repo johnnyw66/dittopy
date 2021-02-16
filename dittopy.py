@@ -16,6 +16,15 @@ from shutil import copy2
 from pathlib import Path
 from os.path import expanduser
 
+
+def logFunctionDecorator(func):
+    def inner(*args, **kwargs):
+        #print("*" * 30)
+        #print(args[0])
+        func(*args, **kwargs)
+        #print("*" * 30)
+    return inner
+
 def log(*args):
     #if (constants.DEBUG):
     if (executeDebug):
@@ -75,6 +84,7 @@ def stripRoot(rootDir,dirName):
 # currently looking at size of file to determin if equal.
 # Previously used md5 to check - but too slow.
 # Returns True if destination file generated/updated
+@logFunctionDecorator
 def dittoFile(srcFile, dstFile, dstDir):
         #print('Ditto %s %s' % (srcFile, dstFile))
         if (os.path.exists(dstFile) and (sz(srcFile) == sz(dstFile))):
@@ -83,13 +93,27 @@ def dittoFile(srcFile, dstFile, dstDir):
             copy2(srcFile, dstDir)
             return True ;
 
-def dittoFiles(rootDir,destDir):
+
+def skipFolder(folderName,blackList=(".","Automatically Add to")):
+    for bar in blackList:
+        if (folderName.startswith(bar)):
+            return True
+    return False
+
+def dittoFiles(rootDir, destDir, ignore=()):
     print('scanFiles Starting %s' % rootDir)
     copied = 0
     total = 0
+    skipped = 0
+
     for dirName, subdirList, fileList in os.walk(rootDir, topdown=True):
         localDirName = stripRoot(rootDir, dirName)
         destDirName = destDir + "/" + localDirName
+
+        if (skipFolder(localDirName, ignore)):
+            skipped += 1
+            print(f"Skipping Folder '{localDirName}'")
+            continue
 
         if (len(localDirName) > 0):
             createDirIfNotExist(destDirName)
@@ -102,10 +126,16 @@ def dittoFiles(rootDir,destDir):
             if (dittoFile(sourceFileName, destFileName, destDirName)):
                 copied += 1
 
-    return copied,total
+    return copied,total,skipped
+
+try:
+    with open('.dittoignore') as f:
+        ignore = [line.rstrip() for line in f]
+except:
+    ignore = []
 
 home = expanduser("~")
 rippedVolume = '/Volumes/RippedMusic'
 musicPath = '/Music/iTunes/Media.localized/'
-copied, total = dittoFiles(home + musicPath, rippedVolume)
-print('Updated %s out of %s files' % (copied, total))
+copied, total, skipped = dittoFiles(home + musicPath, rippedVolume, ignore)
+print('Updated %s out of %s files (skipped %s folders)' % (copied, total, skipped))

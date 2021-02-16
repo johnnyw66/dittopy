@@ -14,6 +14,7 @@ from sqlite3 import Error
 import errno
 from shutil import copy2
 from pathlib import Path
+from os.path import expanduser
 
 def log(*args):
     #if (constants.DEBUG):
@@ -103,7 +104,8 @@ def dittoFiles(rootDir,destDir):
 
     return copied,total
 
-
-#copied, total = dittoFiles('/Users/johnny/Music/iTunes/Media/Music','/Users/johnny/dittoDest')
-copied, total = dittoFiles('/Users/johnny/Music/iTunes/Media/Music','/Volumes/RippedMusic')
+home = expanduser("~")
+rippedVolume = '/Volumes/RippedMusic'
+musicPath = '/Music/iTunes/Media.localized/'
+copied, total = dittoFiles(home + musicPath, rippedVolume)
 print('Updated %s out of %s files' % (copied, total))

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409.1</string>
+	<string>381</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.4</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -83,6 +83,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>RunShellScriptAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
@@ -97,8 +99,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>7677F506-D1EE-410D-9637-0A343CF8F903</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>5F9C8F1B-2062-45AA-85BD-121AFD509733</string>
 				<key>UnlocalizedApplications</key>
@@ -173,12 +173,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:112.000000</string>
+				<string>396.500000:650.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -249,6 +247,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>Set_Value_of_Variable</string>
+				<key>Disabled</key>
+				<true/>
 				<key>InputUUID</key>
 				<string>4C28A35A-DEDE-4331-8DBF-AA5A9680DEAB</string>
 				<key>Keywords</key>
@@ -283,12 +283,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:154.000000</string>
+				<string>396.500000:608.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -368,6 +366,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>RunShellScriptAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
@@ -382,8 +382,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>CE7946B4-67B7-4BC8-9262-E5BA76088800</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>47002534-6D9A-423F-86D1-B1F2354E881E</string>
 				<key>UnlocalizedApplications</key>
@@ -458,12 +456,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:196.000000</string>
+				<string>396.500000:566.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -544,6 +540,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>RunShellScriptAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
@@ -558,8 +556,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>691057F1-3652-4E13-98B9-3508B456EEF1</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>020CFC58-27F8-4933-9181-0955F8F51C89</string>
 				<key>UnlocalizedApplications</key>
@@ -634,12 +630,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:238.000000</string>
+				<string>396.500000:524.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -722,6 +716,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>AMDisplayNotificationAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
@@ -778,12 +774,10 @@
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:280.000000</string>
+				<string>396.500000:482.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -824,11 +818,9 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<false/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -856,6 +848,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>Get_Value_of_Variable</string>
+				<key>Disabled</key>
+				<true/>
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
@@ -895,7 +889,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:322.000000</string>
+				<string>396.500000:440.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -944,6 +938,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>AMEjectDiskAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>InputUUID</key>
 				<string>30DA3E19-63E4-4622-997B-6B65170FEB83</string>
 				<key>Keywords</key>
@@ -1010,7 +1006,7 @@
 							<key>kind</key>
 							<string>server</string>
 							<key>name</key>
-							<string>smb://johnny:johnny66@mediaserver/iTunes/RippedMusic</string>
+							<string>smb://johnny:johnny66@mediaserver/iTunes/RippedMusic/</string>
 						</dict>
 					</array>
 				</dict>
@@ -1028,6 +1024,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>AMGetServersAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>InputUUID</key>
 				<string>FA31759A-1D12-4C9B-A051-699CCFD92D87</string>
 				<key>Keywords</key>
@@ -1059,9 +1057,9 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:406.000000</string>
+				<string>396.500000:356.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Specified Servers.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Get Specified Servers.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<false/>
@@ -1117,6 +1115,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>AMConnectToServersAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>InputUUID</key>
 				<string>587E53F1-47F7-469B-A431-3AC9CDE86E01</string>
 				<key>Keywords</key>
@@ -1137,6 +1137,152 @@
 				<key>arguments</key>
 				<dict/>
 			</dict>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>message</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Please wait.. going through your ripped music.</string>
+						</array>
+					</dict>
+					<key>subtitle</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Please wait</string>
+						</array>
+					</dict>
+					<key>title</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Upload to Media Server</string>
+						</array>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Display Notification.action</string>
+				<key>ActionName</key>
+				<string>Display Notification</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>message</key>
+					<string>Please wait.. going through your ripped music.</string>
+					<key>subtitle</key>
+					<string>Please wait</string>
+					<key>title</key>
+					<string>Upload to Media Server</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Display-Notification</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMDisplayNotificationAction</string>
+				<key>IgnoresInput</key>
+				<true/>
+				<key>InputUUID</key>
+				<string>B788A6D3-69B2-403E-8020-47D02816272C</string>
+				<key>Keywords</key>
+				<array/>
+				<key>OutputUUID</key>
+				<string>AB267BB5-58DB-4A60-807A-9B369B368B3F</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>E5AC1413-C854-4B99-B1D1-22C79EB176A4</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>subtitle</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>title</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>message</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>396.500000:272.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -1187,9 +1333,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/usr/bin/python3.8 ~/dittopy/dittopy.py
-
-</string>
+					<string>python3 ~/dittopy/dittopy.py</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -1216,7 +1360,7 @@
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
-				<string>3A2ACF99-D0CA-4D71-B9E9-35CFC35EDF63</string>
+				<string>A7B1E6FC-7664-4719-8E7E-535BD20510AE</string>
 				<key>Keywords</key>
 				<array>
 					<string>Shell</string>
@@ -1226,9 +1370,9 @@
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>04D89AEF-2070-4561-A1DA-80CDE7062445</string>
+				<string>CAA8DBCE-4267-493F-8E90-8C3752E55C2C</string>
 				<key>UUID</key>
-				<string>D7ACC7D9-DF87-4DD4-877C-44C1926D0DF5</string>
+				<string>1E9D08A7-A12E-43DB-B66F-74DEF076F208</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -1304,114 +1448,9 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:490.000000</string>
+				<string>396.500000:230.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.0</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>source</key>
-					<dict/>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run JavaScript.action</string>
-				<key>ActionName</key>
-				<string>Run JavaScript</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>source</key>
-					<string>function run(input, parameters) {		// Your script goes here	return input[1];}</string>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunJavaScript</string>
-				<key>CFBundleVersion</key>
-				<string>1.0</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>RunJavaScriptAction</string>
-				<key>InputUUID</key>
-				<string>3B358242-E18F-4B2A-8620-86008231F792</string>
-				<key>Keywords</key>
-				<array>
-					<string>Run</string>
-					<string>JavaScript</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>1C947B04-A99E-40DC-BB4B-524C03BD1C62</string>
-				<key>UUID</key>
-				<string>03AE1315-B9F4-457C-8F31-AD084A8F3A54</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<string>function run(input, parameters) {
-	
-	// Your script goes here
-
-	return input;
-}</string>
-						<key>name</key>
-						<string>source</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
-				<key>isViewVisible</key>
-				<false/>
-				<key>location</key>
-				<string>474.500000:532.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Run JavaScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<false/>
@@ -1480,6 +1519,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>Set_Value_of_Variable</string>
+				<key>Disabled</key>
+				<false/>
 				<key>InputUUID</key>
 				<string>44601D89-3D49-485D-B680-0BADA7CFEF40</string>
 				<key>Keywords</key>
@@ -1514,12 +1555,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:574.000000</string>
+				<string>396.500000:188.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1602,14 +1641,16 @@
 				</array>
 				<key>Class Name</key>
 				<string>AMDisplayNotificationAction</string>
+				<key>Disabled</key>
+				<false/>
+				<key>IgnoresInput</key>
+				<true/>
 				<key>InputUUID</key>
 				<string>1C0308E2-6AFA-456F-A94E-3E5AEA8A6DFF</string>
 				<key>Keywords</key>
 				<array/>
 				<key>OutputUUID</key>
 				<string>78350BE0-43DC-48CD-9AE5-D21E96022E4B</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>CF7156A5-817C-4F4F-AA84-3E34572C1A05</string>
 				<key>UnlocalizedApplications</key>
@@ -1658,12 +1699,10 @@
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:616.000000</string>
+				<string>396.500000:146.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1704,11 +1743,9 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<false/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -1736,6 +1773,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>Get_Value_of_Variable</string>
+				<key>Disabled</key>
+				<true/>
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
@@ -1775,7 +1814,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>474.500000:658.000000</string>
+				<string>396.500000:104.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1824,6 +1863,8 @@
 				</array>
 				<key>Class Name</key>
 				<string>AMEjectDiskAction</string>
+				<key>Disabled</key>
+				<true/>
 				<key>InputUUID</key>
 				<string>A0048581-084E-4362-830C-ECF85C2A5B0C</string>
 				<key>Keywords</key>
@@ -1845,101 +1886,101 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>01C60C66-373D-4B91-A039-21165C0B0010</key>
-		<dict>
-			<key>from</key>
-			<string>CF7156A5-817C-4F4F-AA84-3E34572C1A05 - CF7156A5-817C-4F4F-AA84-3E34572C1A05</string>
-			<key>to</key>
-			<string>CF36188D-B407-435A-8167-2982ECDCE428 - CF36188D-B407-435A-8167-2982ECDCE428</string>
-		</dict>
-		<key>055CB34A-E2A2-4B7C-9251-B405C2CEEDBE</key>
-		<dict>
-			<key>from</key>
-			<string>A29BBC7B-313F-47BC-A1F2-B7D0B755051C - A29BBC7B-313F-47BC-A1F2-B7D0B755051C</string>
-			<key>to</key>
-			<string>3436059F-B4E4-4B1C-A635-38BA034993B9 - 3436059F-B4E4-4B1C-A635-38BA034993B9</string>
-		</dict>
-		<key>07CB8B3B-5F99-486B-90C7-45A8FED2AEDF</key>
-		<dict>
-			<key>from</key>
-			<string>020CFC58-27F8-4933-9181-0955F8F51C89 - 020CFC58-27F8-4933-9181-0955F8F51C89</string>
-			<key>to</key>
-			<string>A29BBC7B-313F-47BC-A1F2-B7D0B755051C - A29BBC7B-313F-47BC-A1F2-B7D0B755051C</string>
-		</dict>
-		<key>32966812-95CA-439A-89BE-3909C2AE1234</key>
-		<dict>
-			<key>from</key>
-			<string>D7ACC7D9-DF87-4DD4-877C-44C1926D0DF5 - D7ACC7D9-DF87-4DD4-877C-44C1926D0DF5</string>
-			<key>to</key>
-			<string>03AE1315-B9F4-457C-8F31-AD084A8F3A54 - 03AE1315-B9F4-457C-8F31-AD084A8F3A54</string>
-		</dict>
-		<key>3A932189-7A4D-4AC3-BD90-BD6CFABCF465</key>
+		<key>03699C63-9926-4C85-9329-2D0024699F25</key>
 		<dict>
 			<key>from</key>
 			<string>441AE6EC-E725-4D64-A07C-FAFC77632345 - 441AE6EC-E725-4D64-A07C-FAFC77632345</string>
 			<key>to</key>
-			<string>D7ACC7D9-DF87-4DD4-877C-44C1926D0DF5 - D7ACC7D9-DF87-4DD4-877C-44C1926D0DF5</string>
+			<string>E5AC1413-C854-4B99-B1D1-22C79EB176A4 - E5AC1413-C854-4B99-B1D1-22C79EB176A4</string>
 		</dict>
-		<key>3F3E90CF-ED09-4AFB-AA88-807A426A6F56</key>
-		<dict>
-			<key>from</key>
-			<string>3436059F-B4E4-4B1C-A635-38BA034993B9 - 3436059F-B4E4-4B1C-A635-38BA034993B9</string>
-			<key>to</key>
-			<string>0FB14E3C-4E54-4D36-B2EF-EE88576BFF82 - 0FB14E3C-4E54-4D36-B2EF-EE88576BFF82</string>
-		</dict>
-		<key>433C6212-AA1D-4F90-83FA-48A3155FEE80</key>
-		<dict>
-			<key>from</key>
-			<string>CF36188D-B407-435A-8167-2982ECDCE428 - CF36188D-B407-435A-8167-2982ECDCE428</string>
-			<key>to</key>
-			<string>5DD08D88-77BD-4492-8DD6-5C7DC9B14A61 - 5DD08D88-77BD-4492-8DD6-5C7DC9B14A61</string>
-		</dict>
-		<key>4C405A01-EC3C-4469-B7C4-8A6C1008F901</key>
-		<dict>
-			<key>from</key>
-			<string>C84AD33A-B1C1-40C8-89F6-A5F68644702C - C84AD33A-B1C1-40C8-89F6-A5F68644702C</string>
-			<key>to</key>
-			<string>CF7156A5-817C-4F4F-AA84-3E34572C1A05 - CF7156A5-817C-4F4F-AA84-3E34572C1A05</string>
-		</dict>
-		<key>9588DE94-D50D-40F7-AFE1-679BF9E57C98</key>
+		<key>0DAEF97B-5D16-4732-B18A-2D26A90B3414</key>
 		<dict>
 			<key>to</key>
 			<string>0E2A60B7-6D88-46C6-BD66-AFF40C517F2B - 0E2A60B7-6D88-46C6-BD66-AFF40C517F2B</string>
 		</dict>
-		<key>AB0DC312-10C0-4C98-AA0D-C970146643F9</key>
-		<dict>
-			<key>from</key>
-			<string>47002534-6D9A-423F-86D1-B1F2354E881E - 47002534-6D9A-423F-86D1-B1F2354E881E</string>
-			<key>to</key>
-			<string>020CFC58-27F8-4933-9181-0955F8F51C89 - 020CFC58-27F8-4933-9181-0955F8F51C89</string>
-		</dict>
-		<key>AB9188C1-54FD-406A-948E-3CDDB9C1FE20</key>
-		<dict>
-			<key>from</key>
-			<string>03AE1315-B9F4-457C-8F31-AD084A8F3A54 - 03AE1315-B9F4-457C-8F31-AD084A8F3A54</string>
-			<key>to</key>
-			<string>C84AD33A-B1C1-40C8-89F6-A5F68644702C - C84AD33A-B1C1-40C8-89F6-A5F68644702C</string>
-		</dict>
-		<key>BCB72217-2952-4527-9F96-B6CE3F90E4A8</key>
+		<key>2A5A2A99-E4D2-49A4-B8BE-BAC564ABC6A7</key>
 		<dict>
 			<key>from</key>
 			<string>5F9C8F1B-2062-45AA-85BD-121AFD509733 - 5F9C8F1B-2062-45AA-85BD-121AFD509733</string>
 			<key>to</key>
 			<string>2FAFE0CD-C6F6-43D5-8306-551CD5A25CA9 - 2FAFE0CD-C6F6-43D5-8306-551CD5A25CA9</string>
 		</dict>
-		<key>E9B3CB4D-1D75-4404-83CD-E7FAC9D1B5F9</key>
+		<key>332A35A8-5992-4B8A-A8C0-FC57454794F7</key>
+		<dict>
+			<key>from</key>
+			<string>47002534-6D9A-423F-86D1-B1F2354E881E - 47002534-6D9A-423F-86D1-B1F2354E881E</string>
+			<key>to</key>
+			<string>020CFC58-27F8-4933-9181-0955F8F51C89 - 020CFC58-27F8-4933-9181-0955F8F51C89</string>
+		</dict>
+		<key>4BC6DC06-EAAF-4509-B1D3-E59D7E450FB6</key>
+		<dict>
+			<key>from</key>
+			<string>C84AD33A-B1C1-40C8-89F6-A5F68644702C - C84AD33A-B1C1-40C8-89F6-A5F68644702C</string>
+			<key>to</key>
+			<string>CF7156A5-817C-4F4F-AA84-3E34572C1A05 - CF7156A5-817C-4F4F-AA84-3E34572C1A05</string>
+		</dict>
+		<key>52EBB8A2-0572-465C-A65C-1DAFA159838B</key>
 		<dict>
 			<key>from</key>
 			<string>2FAFE0CD-C6F6-43D5-8306-551CD5A25CA9 - 2FAFE0CD-C6F6-43D5-8306-551CD5A25CA9</string>
 			<key>to</key>
 			<string>47002534-6D9A-423F-86D1-B1F2354E881E - 47002534-6D9A-423F-86D1-B1F2354E881E</string>
 		</dict>
-		<key>EC680DA2-0D55-40D5-AF72-DF8A5C04E614</key>
+		<key>7AC35C57-24C6-424E-B7AB-D13F2DF190C6</key>
 		<dict>
 			<key>from</key>
 			<string>0E2A60B7-6D88-46C6-BD66-AFF40C517F2B - 0E2A60B7-6D88-46C6-BD66-AFF40C517F2B</string>
 			<key>to</key>
 			<string>441AE6EC-E725-4D64-A07C-FAFC77632345 - 441AE6EC-E725-4D64-A07C-FAFC77632345</string>
+		</dict>
+		<key>A12AB76C-38E8-4D71-AFD7-19D7972D5A19</key>
+		<dict>
+			<key>from</key>
+			<string>3436059F-B4E4-4B1C-A635-38BA034993B9 - 3436059F-B4E4-4B1C-A635-38BA034993B9</string>
+			<key>to</key>
+			<string>0FB14E3C-4E54-4D36-B2EF-EE88576BFF82 - 0FB14E3C-4E54-4D36-B2EF-EE88576BFF82</string>
+		</dict>
+		<key>A7A4EDBB-C9C2-4AA8-A9CD-A41919D43496</key>
+		<dict>
+			<key>from</key>
+			<string>1E9D08A7-A12E-43DB-B66F-74DEF076F208 - 1E9D08A7-A12E-43DB-B66F-74DEF076F208</string>
+			<key>to</key>
+			<string>C84AD33A-B1C1-40C8-89F6-A5F68644702C - C84AD33A-B1C1-40C8-89F6-A5F68644702C</string>
+		</dict>
+		<key>C02CB150-9D9A-4DE3-BAB8-C5D0D4CEB435</key>
+		<dict>
+			<key>from</key>
+			<string>E5AC1413-C854-4B99-B1D1-22C79EB176A4 - E5AC1413-C854-4B99-B1D1-22C79EB176A4</string>
+			<key>to</key>
+			<string>1E9D08A7-A12E-43DB-B66F-74DEF076F208 - 1E9D08A7-A12E-43DB-B66F-74DEF076F208</string>
+		</dict>
+		<key>C315E86A-2DDD-4126-9E50-2FD879A5F026</key>
+		<dict>
+			<key>from</key>
+			<string>CF7156A5-817C-4F4F-AA84-3E34572C1A05 - CF7156A5-817C-4F4F-AA84-3E34572C1A05</string>
+			<key>to</key>
+			<string>CF36188D-B407-435A-8167-2982ECDCE428 - CF36188D-B407-435A-8167-2982ECDCE428</string>
+		</dict>
+		<key>C6466D10-7E89-4C49-A6D2-9B17E23D9393</key>
+		<dict>
+			<key>from</key>
+			<string>A29BBC7B-313F-47BC-A1F2-B7D0B755051C - A29BBC7B-313F-47BC-A1F2-B7D0B755051C</string>
+			<key>to</key>
+			<string>3436059F-B4E4-4B1C-A635-38BA034993B9 - 3436059F-B4E4-4B1C-A635-38BA034993B9</string>
+		</dict>
+		<key>C6B58CA2-E236-46CB-A660-80115D8B3355</key>
+		<dict>
+			<key>from</key>
+			<string>020CFC58-27F8-4933-9181-0955F8F51C89 - 020CFC58-27F8-4933-9181-0955F8F51C89</string>
+			<key>to</key>
+			<string>A29BBC7B-313F-47BC-A1F2-B7D0B755051C - A29BBC7B-313F-47BC-A1F2-B7D0B755051C</string>
+		</dict>
+		<key>EBEE441B-06DB-4206-A838-677DE644E89A</key>
+		<dict>
+			<key>from</key>
+			<string>CF36188D-B407-435A-8167-2982ECDCE428 - CF36188D-B407-435A-8167-2982ECDCE428</string>
+			<key>to</key>
+			<string>5DD08D88-77BD-4492-8DD6-5C7DC9B14A61 - 5DD08D88-77BD-4492-8DD6-5C7DC9B14A61</string>
 		</dict>
 	</dict>
 	<key>variables</key>

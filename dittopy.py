@@ -16,6 +16,15 @@ from shutil import copy2
 from pathlib import Path
 from os.path import expanduser
 
+def mount():
+	directory = "/Volumes/RippedMusic"
+	if not os.path.exists(directory):
+		os.makedirs(directory)
+	os.system("mount_smbfs //johnny:johnny66@mediaserver/iTunes /Volumes/RippedMusic")
+
+def umount():
+	os.system("umount /Volumes/RippedMusic")
+
 
 def logFunctionDecorator(func):
     def inner(*args, **kwargs):
@@ -100,8 +109,9 @@ def skipFolder(folderName,blackList=(".","Automatically Add to")):
             return True
     return False
 
-def dittoFiles(rootDir, destDir, ignore=()):
-    print('scanFiles Starting %s' % rootDir)
+def dittoFiles(rootDir, destDir, ignore=(), verbose=True):
+    if (verbose):	
+    	print('scanFiles Starting %s' % rootDir)
     copied = 0
     total = 0
     skipped = 0
@@ -134,8 +144,18 @@ try:
 except:
     ignore = []
 
+
 home = expanduser("~")
+sambaVolume = 'iTunes/RippedMusic'
 rippedVolume = '/Volumes/RippedMusic'
-musicPath = '/Music/iTunes/Media.localized/'
-copied, total, skipped = dittoFiles(home + musicPath, rippedVolume, ignore)
+musicPath = '/Music/iTunes/iTunes Media/Music/'
+try:
+
+	mount()
+	copied, total, skipped = dittoFiles(home + musicPath, rippedVolume, ignore, False)
+	umount()
+except:
+	pass
+
 print('Updated %s out of %s files (skipped %s folders)' % (copied, total, skipped))
+

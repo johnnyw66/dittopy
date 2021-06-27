@@ -9,5 +9,5 @@ Since the main purpose of this utility was to update 'ripped' music onto a NAS d
 A '.dittyignore' is read which contains a list of folder names which can be ignored (one folder name per line).
 
 
-Included in the source is a simple Automator (Mac OS X) application - which runs mounts a NAS drive, runs dittopy script 
-and finally unmounts the NAS drive.
+Included in the source is a simple Automator (Mac OS X) application - runs dittopy script and displays a couple of notifications. 
+
